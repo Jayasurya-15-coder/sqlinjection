@@ -25,27 +25,40 @@ SQL Injection is a sort of infusion assault that makes it conceivable to execute
 Identify IP address using ifconfig in Metasploitable2
 #OUTPUT
 
+<img width="770" height="425" alt="Screenshot 2026-05-21 191506" src="https://github.com/user-attachments/assets/387b6a29-8f5e-460e-a82b-99ad966505d6" />
+
+
 Use the above ip address to access the apache webserver of Metasploitable2 from kali/parrot linux. In Kali Linux use the ip address in a web browser.
 ##  OUTPUT
+
+<img width="932" height="498" alt="Screenshot 2026-05-21 191238" src="https://github.com/user-attachments/assets/fb60c142-5e09-4502-9462-647be3ef455d" />
 
 
 Select Multidae from the menu listed as shown above. The page is displayed as below:
 ##  OUTPUT
+
+<img width="1280" height="797" alt="Screenshot 2026-05-21 192248" src="https://github.com/user-attachments/assets/39c405fa-1ea3-4560-b001-49730ed8510e" />
 
 
 
 Click on the menu Login/Register and register for an account
 ##  OUTPUT
 
+<img width="1273" height="782" alt="Screenshot 2026-05-21 192341" src="https://github.com/user-attachments/assets/b4e63f8c-7803-414f-acf4-8c51188bd8cb" />
 
 
 Click on the link “Please register here”
 ##  OUTPUT
 
 
+<img width="1273" height="782" alt="Screenshot 2026-05-21 192341" src="https://github.com/user-attachments/assets/b4e63f8c-7803-414f-acf4-8c51188bd8cb" />
+
 
 Click on “Create Account” to display the following page:
 ##  OUTPUT
+
+<img width="928" height="436" alt="Screenshot 2026-05-21 211334" src="https://github.com/user-attachments/assets/ba53d917-83fb-4441-8c08-c6b2f4b89876" />
+
 
 
 The login structure we will use in our examples is straightforward. It contains two input fields (username and password), which are both vulnerable. The back-end content creates a query to approve the username and secret key given by the client. Here is an outline of the page rationale:
@@ -55,11 +68,13 @@ The login structure we will use in our examples is straightforward. It contains 
  For the username put “ganesh” or “anything” and for the password put (anything’ or ‘1’=’1) or (admin’ or ‘1’=’1) then try to log in, and you’ll be presented with an admin login page.
 ##  OUTPUT
 
+<img width="1710" height="980" alt="image" src="https://github.com/user-attachments/assets/436b95e8-cfb8-4016-b7be-7e12cb0fc83e" />
 
 
 Click “Login”. The logged in page will show as below:
 ##  OUTPUT
 
+<img width="1707" height="951" alt="Screenshot 2026-05-21 205935" src="https://github.com/user-attachments/assets/44f83793-e6d5-4407-a33b-f23af809e777" />
 
 
 If error faced in registration follow the following steps in metasploitable 2:
@@ -75,11 +90,14 @@ Type msfadmin when prompted for the root password.
 Once nano opens config.inc file, look for the line $dbname = ‘metasploit’ as shown in Figure  below:
 ##  OUTPUT
 
+<img width="715" height="90" alt="image" src="https://github.com/user-attachments/assets/7540a9b5-78ba-4670-b6b4-e77f382e21ad" />
+
+
 
 Replace ‘metasploit’ with ‘owasp10’ and make sure the lines end with semicolon ; as shown in Figure
 ##  OUTPUT
 
-
+<img width="727" height="427" alt="Screenshot 2026-05-21 210556" src="https://github.com/user-attachments/assets/986baf5c-f7bc-48c0-935d-44941e8289d4" />
 
 
 Save and exit the config.inc
@@ -90,6 +108,7 @@ sudo /etc/init.d/apache2 reload
 ##  OUTPUT
 
 
+<img width="606" height="83" alt="image" src="https://github.com/user-attachments/assets/f03d7fd9-e8a5-4e83-b028-873ae78c2d20" />
 
 
 # Reset Mutillidae database
@@ -97,6 +116,7 @@ Refresh the page then clicking on the Reset DB menu option to reset the Mutillid
 ##  OUTPUT
 
 
+<img width="1262" height="720" alt="Screenshot 2026-05-21 193051" src="https://github.com/user-attachments/assets/60f27e69-dd10-4dbd-b200-d4ff03e2ab1c" />
 
 
 
@@ -106,10 +126,13 @@ Alright. Now is time to test if we managed to fix the database issue. Go ahead a
  The Mutillidae database error no longer appears 
 #OUTPUT
 
+<img width="1257" height="755" alt="Screenshot 2026-05-21 192527" src="https://github.com/user-attachments/assets/f1cfa1d6-7a52-44ff-b359-d364fd747aaa" />
 
 
 Now after logging out you will see the login page. In the login page give ganesh’ # (myusername). You can see the page now enters into the administrator page as before when giving the password.
 #OUTPUT
+
+<img width="1252" height="851" alt="Screenshot 2026-05-21 215829" src="https://github.com/user-attachments/assets/91f20770-2450-42c5-bbe8-b8ecef89180a" />
 
 
 Click the login button and you will see it enter into the administrator page.
@@ -217,6 +240,8 @@ Ex: (union select null,load_file(‘/etc/passwd’),null,null,null).
 
 
 ##  OUTPUT
+
+<img width="928" height="436" alt="Screenshot 2026-05-21 211334" src="https://github.com/user-attachments/assets/897ae16c-eef4-4642-b51d-09492e271d2c" />
 
 
 ## RESULT:
